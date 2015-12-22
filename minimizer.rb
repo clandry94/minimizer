@@ -17,7 +17,7 @@ class Minimizer
   def initialize(name, f_path)
     @name = name
     @path = f_path
-    move_files
+    minimize_files
   end
 
   private
