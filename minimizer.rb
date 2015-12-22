@@ -1,7 +1,11 @@
 ###
 #
 # minimizer.rb
-# initialize the class 
+# Initialize the class with any name you would like, and the path to the folder
+# that needs minimized. All files within the source directory will be
+# moved into one single folder that will include a date stamp
+#
+###
 
 
 class Minimizer
@@ -18,7 +22,7 @@ class Minimizer
 
   private
 
-  def move_files
+  def minimize_files
     puts "Source Directory: #{@path}"
     time = Time.now.strftime("%Y-%m-%d")
     dest_dir = @path + "/#{@name}_minimized_#{time}"
